@@ -1,0 +1,35 @@
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand">C.I. Calculator</a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/']" routerLinkActive="router-link-active">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/rate">Rate</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/principal">Principal</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/amount">Amount</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/time">Time</a>
+
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/Interest">Interest</a>
+      </li>
+    </ul>
+  </div>
+</nav>

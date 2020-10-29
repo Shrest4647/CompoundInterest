@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="jumbotron">
+    <h2>Welcome to Compound Interest Calculator</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      Magnam nesciunt maiores accusamus, ducimus adipisci non ut tenetur
+      alias architecto, minus blanditiis praesentium harum quasi
+      veritatis voluptatibus odio! Ea, maxime odit!</p>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-md-4 col-lg-3" *ngFor="let photo of photos">
+        <img [src]="photo" alt="photo" class="img img-float img-fluid" style="margin: 5px;" >
+    </div>
+  </div>
+  <h3 class="text-primary">
+    Go To
+  </h3>
+  <a routerLink="/rate" class="btn btn-success btn-md btn-round" style="margin: 20px;">Rate</a>
+  <a routerLink="/principal" class="btn btn-success btn-md btn-round" style="margin: 20px;">Principal</a>
+  <a routerLink="/time" class="btn btn-success btn-md btn-round" style="margin: 20px;">Time</a>
+  <a routerLink="/amount" class="btn btn-success btn-md btn-round" style="margin: 20px;">Amount</a>
+  <a routerLink="/interest" class="btn btn-success btn-md btn-round" style="margin: 20px;">Interest</a>
+
+</div>

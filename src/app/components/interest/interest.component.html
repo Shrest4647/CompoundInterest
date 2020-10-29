@@ -1,0 +1,27 @@
+<div class="container">
+    <h2 class="text-center">
+        Amount Calculator
+    </h2>
+    <div class="row">
+        <div class="col-md-6 col-xs-8">
+            <div class="form-group">
+                <label for="principal">Principal</label>
+                <input type="number" class="form-control" id="principal" [(ngModel)]="principal">
+            </div>
+            <div class="form-group">
+                <label for="Time">Time (in years)</label>
+                <input type="number" class="form-control" id="time" [(ngModel)]="time">
+            </div>
+            <div class="form-group">
+                <label for="Amount">Rate</label>
+                <input type="number" class="form-control" id="amount" [(ngModel)]="rate">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-lg btn-submit btn-dark" id="calbtn" (click)="onClick();">Calculate Interest</button>
+            </div>
+        </div>
+        <div class="col-md-6 col-xs-4 jumbotron">
+            <h5 class="text-center text-secondary" id="rate">Your interest is Rs. {{interest}}</h5>
+        </div>
+    </div>
+</div>
